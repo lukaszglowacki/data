@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  build: 
+    build: .
+    volumes:
+     - foo2:/app
+  web-server:
+    build: './build/service'
+    volumes:
+      - foo2:/app
+    
+volumes:
+  foo2:
+    external: true

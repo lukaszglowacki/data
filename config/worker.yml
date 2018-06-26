@@ -1,0 +1,13 @@
+DATABASE:
+  PATH: "./foo.db"
+JOBS:
+  - Name: "cpu avg" 
+    TICK: 3
+    COMMAND: "echo 3"
+  - Name: "disk usage"
+    TICK: 2
+    COMMAND: "echo 2"
+  - Name: "mem usage"
+    TICK: 1
+    COMMAND: "echo 1"
+
